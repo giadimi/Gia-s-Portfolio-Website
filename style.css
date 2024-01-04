@@ -1,0 +1,284 @@
+body {
+    margin: 0; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ... NAVIGATION ... */
+.logo {
+    width: 62px;
+    height: 34px;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: inline-flex;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    top: 0;
+    left: 0;
+
+}
+
+nav a {
+    color: #E2C2E5;
+    text-align: center;
+    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 33px;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+}
+
+/* ... HERO SECTION ... */
+
+.hero {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    height: 140vh;
+    display: inline;
+}
+
+.content {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+#back-video {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    overflow-x: hidden;
+}
+
+video {
+object-fit: cover;
+  width: 100vw;
+  height: 140vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.gradient {
+    width: 100%;
+    height: 140vh;
+    background: linear-gradient(0deg, #E2C2E5 0%, rgba(245, 245, 245, 0.00) 39.58%);
+    position:absolute;
+    left:0;
+    top: 0;
+    z-index: 1;
+}
+
+.content {
+    width: 100%;
+    height: 575px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-size: 16px;
+    color: white;
+    font-weight: 400px;
+    letter-spacing: 0.7px;
+    margin-top: 107px;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    font-size: 14px;
+    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-style: normal;
+    font-weight: 400px;
+    border: 1px solid white;
+    padding: 9px 42px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.largelogo {
+    width: 52%;
+    flex-shrink: 0;
+    padding-top: 59px;
+    padding-bottom: 48px;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    padding-top: 88px;
+    padding-bottom: 22.5px;
+}
+
+.stat1 {
+    border-left: 226px;
+}
+
+.stat2 {
+
+}
+
+.stat3 {
+    border-right: 226px;
+}
+
+.stats h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.stats p {
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 19px;
+}
+
+.stats hr {
+    width: 240px;
+    background-color: #FFF;
+    border: none;
+    height: 1px;
+}
+
+.downarrow {
+    padding-top: 60px;
+}
+
+.enjoy {
+    padding-top: 8%;
+}
+
+h1 {
+    font-family: 'tan grandeur';
+    color: white;
+    font-size: 72px;
+    font-weight: 100;
+}
+
+/* ... FOOTER ... */
+
+footer {
+    width: 100%;
+    height: 223px;
+    z-index: 2;
+    background: #E2C2E5;
+    margin-top: auto;
+}
+
+.footer-grid {
+    display: inline-grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 25% 55% 20%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-about {
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+}
+
+.footer-about h6 {
+    color: #000;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 18px;
+    font-style: medium;
+    font-weight: 400;
+}
+
+.footer-about p {
+    color: #363537;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.footer-socials {
+    display: flexbox;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.footer-socials svg {
+    z-index: 3;
+    padding-top: 3%;
+}
+
+.footer-socials ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-socials li {
+    margin-bottom: 16px;
+}
+
+.footer-socials li a {
+    text-decoration: none;
+    display: block;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 14px;
+    font-style: normal;
+    color: #000;
+}
